@@ -1,3 +1,7 @@
+/* ............................. */
+/* GENERAL AND CSS RESET  */
+/* ............................. */
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +18,10 @@ body {
   margin-top: 2rem;
 }
 
+/* ............................. */
+/* NAVBAR  */
+/* ............................. */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -27,11 +35,10 @@ nav {
 
 nav img {
   width: 12rem;
-
 }
 
-nav img:hover{
-    cursor: pointer;
+nav img:hover {
+  cursor: pointer;
 }
 .nav-items {
   display: flex;
@@ -41,11 +48,11 @@ nav img:hover{
   font-size: 1.6rem;
   line-height: 1.6;
   color: #411daf;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 .nav-item:hover {
- color: #965cf2;
- cursor: pointer;
+  color: #965cf2;
+  cursor: pointer;
 }
 
 .signin-btn {
@@ -58,90 +65,157 @@ nav img:hover{
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-/* Hero section */
+/* ............................. */
+/* INTRO SECTION  */
+/* ............................. */
 .intro-section {
-    display: grid;
-    grid-template-columns: 30fr 70fr;
-    /* column-gap: 2rem; */
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  /* column-gap: 2rem; */
 
-
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .left-section {
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .left-section h1 {
-    font-size: 6rem;
-    font-weight: 600;
-    color: #3E4794;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #3e4794;
 }
 
 .left-section h4 {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    font-weight: 400;
-    color: #696C8C;
-    text-align: left;
-    padding-right: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #696c8c;
+  text-align: left;
+  padding-right: 2rem;
 }
 
 .learn-more-btn {
-    display: block;
-    width: 20rem    ;
-    padding: 1.5rem 2.5rem;
-    font-size: 2rem;
-    font-weight: 600;
-    border-radius: 30px;
-    color: #fff;
-    border: 1px solid transparent;
-    background: linear-gradient(to right, #965cf2, #ff8adc);
+  display: block;
+  width: 20rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  color: #fff;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, #965cf2, #ff8adc);
 }
 
-/* Imaged section */
+/* ............................. */
+/* IMAGE SECTION  */
+/* ............................. */
 
 .imgs-div {
-    position: relative;
+  position: relative;
 }
 
 .vector-img {
-    position: absolute;
-    bottom: 145px;
-    left: 40px;
+  position: absolute;
+  bottom: 145px;
+  left: 40px;
 }
 .vector-dot {
-    position: absolute;
-    bottom: 227px;
-    left: 92px;
+  position: absolute;
+  bottom: 227px;
+  left: 92px;
 }
 
 .main-image {
-    width: 90%;
-    margin-left: 5rem;
+  width: 90%;
+  margin-left: 5rem;
 }
 
-
-.bg-img{
+.bg-img {
   width: 63%;
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: -1;
-
 }
 
-
-
-
-
-
-
-
+/* ............................. */
+/* MEDIA QUARIES  */
+/* ............................. */
+@media (max-width: 1200px) {
+  nav {
+    padding: 0 5rem;
+  }
+  .left-section {
+    padding: 0 5rem;
+  }
+  .left-section h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+  .nav-items {
+    gap: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  .nav-items {
+    gap: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+  nav img {
+    width: 10rem;
+  }
+  .nav-items {
+    gap: 2rem;
+  }
+  .nav-item {
+    font-size: 1.5rem;
+  }
+  .left-section h1 {
+    font-size: 4rem;
+  }
+  .left-section h4 {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .bg-img {
+    width: 70%;
+    /* height: 100%; */
+  }
+}
+@media (max-width: 450px) {
+  nav img {
+    width: 8rem;
+  }
+  .nav-items {
+    gap: 1rem;
+  }
+  .nav-item {
+    font-size: 1.4rem;
+  }
+  .signin-btn {
+    font-size: 1.4rem;
+  }
+} ;
