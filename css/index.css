@@ -178,6 +178,7 @@ button:hover {
   }
   .nav-items {
     gap: 2rem;
+    display: none;
   }
 }
 @media (max-width: 500px) {
